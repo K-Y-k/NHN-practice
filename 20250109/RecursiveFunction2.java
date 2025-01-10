@@ -1,5 +1,5 @@
 public class RecursiveFunction2 {
-    // ÆÑÅä¸®¾ó
+    // íŒ©í† ë¦¬ì–¼
     public static int factorial(int n) {
         if (n < 1) {
             return 1;
@@ -9,7 +9,7 @@ public class RecursiveFunction2 {
         return n * factorial(n-1);
     }
 
-    // À¯Å¬¸®µå ¾Ë°í¸®Áò È°¿ëÇÑ ÃÖ´ë °ø¾à¼ö
+    // ìœ í´ë¦¬ë“œ ì•Œê³ ë¦¬ì¦˜ í™œìš©í•œ ìµœëŒ€ ê³µì•½ìˆ˜
     public static int gcd(int a, int b) {
         if (b == 0) {
             return a;

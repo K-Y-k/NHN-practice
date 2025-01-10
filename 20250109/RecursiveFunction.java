@@ -1,5 +1,5 @@
 public class RecursiveFunction {
-    // Ãâ·Â
+    // ì¶œë ¥
     public static int add(int n) {
         if (n < 1) {
             return n;
@@ -9,7 +9,7 @@ public class RecursiveFunction {
         return add(n-1);
     }
 
-    // ÃÑ ÇÕ
+    // ì´ í•©
     public static int sum(int n) {
         if (n < 1) {
             return n;

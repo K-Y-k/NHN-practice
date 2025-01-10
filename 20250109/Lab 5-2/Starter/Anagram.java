@@ -55,7 +55,14 @@ public class Anagram {
 
     // 공백 제거 및 소문자 적용 함수
     public static char[] removeWhiteSpace(char[] charArr) {
-        char[] newCharArr = new char[charArr.length];
+        int whiteSpaceCount = 0;
+        for (int i = 0; i < charArr.length; i++) {
+            if (charArr[i] == ' ') {
+                whiteSpaceCount++;
+            }
+        }
+        
+        char[] newCharArr = new char[charArr.length-whiteSpaceCount];
 
         for (int i = 0, j = 0; i < charArr.length; i++) {
             if (charArr[i] == ' ') {
@@ -96,9 +103,9 @@ public class Anagram {
         String str2 = "silent";
 
         if (isAnagram(str1, str2)) {
-            System.out.println(str1 + "과 " + str2 + "는 애너그램입니다.");
+            System.out.println(str1 + " and " + str2 + " is anagram");
         } else {
-            System.out.println(str1 + "과 " + str2 + "는 애너그램이 아닙니다.");
+            System.out.println(str1 + " and " + str2 + " is not anagram");
         }
     }
 }

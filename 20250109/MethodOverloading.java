@@ -3,8 +3,8 @@ public class MethodOverloading {
         return (i > j) ? i :j;
     }
 
-    // �޼ҵ� �����ε�
-    // �Ķ������ ������ Ÿ�԰� �ٸ��� ���� �̸��� ���� �޼ҵ� ��밡��
+    // 메소드 오버로딩
+    // 파라미터의 개수와 타입가 다르면 같은 이름을 가진 메소드 사용가능
     static int max(int i, int j, int k) {
         return max(max(i, j), k);
     }
