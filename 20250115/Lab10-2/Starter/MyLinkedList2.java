@@ -49,6 +49,7 @@ public class MyLinkedList2 implements List {
     // implements remove method of List interface
     //
     public void remove(int index) {
+        // 비어있을 때 예외 처리
         if (this.headNode == null) {
             throw new LinkedListInvalidOperationException("List is empty");
         }
@@ -71,13 +72,16 @@ public class MyLinkedList2 implements List {
     //
     public Object get(int index) {
         // 음수 예외 처리
-        
+        if (index < 0) {
+            throw new IllegalArgumentException("Don't minus number!");
+        }
 
         // 비어있을 때 예외 처리
-
+        if (headNode == null) {
+            throw new LinkedListInvalidOperationException("List is empty");
+        }
 
         Node currentNode = headNode;
-
         
         for (int i = 0; i < index; i++) {
             currentNode = currentNode.getNextNode();
