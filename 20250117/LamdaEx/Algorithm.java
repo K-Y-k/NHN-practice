@@ -1,3 +1,4 @@
+package LamdaEx;
 public class Algorithm {
     static final int addFrom1To10 = 55;
     

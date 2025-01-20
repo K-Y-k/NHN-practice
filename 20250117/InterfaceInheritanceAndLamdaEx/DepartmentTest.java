@@ -1,3 +1,4 @@
+package InterfaceInheritanceAndLamdaEx;
 public class DepartmentTest {
     public static void main(String[] args) {
         Department<Student> department = new Department<>(1, "Computer Engineering");

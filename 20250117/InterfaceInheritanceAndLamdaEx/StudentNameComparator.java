@@ -1,3 +1,4 @@
+package InterfaceInheritanceAndLamdaEx;
 import java.util.Comparator;
 
 // Stuendt의 이름을 기준으로 구현한 Comparator 구현체

@@ -1,3 +1,4 @@
+package InterfaceInheritanceAndLamdaEx;
 // Person이 Comparable을 상속 받으므로 
 // Person을 상속받는 Professor도 Comparable을 구현해야 한다!
 public class Professor implements Person {

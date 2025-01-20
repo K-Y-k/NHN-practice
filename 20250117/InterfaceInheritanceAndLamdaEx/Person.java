@@ -1,3 +1,4 @@
+package InterfaceInheritanceAndLamdaEx;
 // 타입의 정의가 필요하여 추상 클래스가 아닌 인터페이스를 사용한 것
 // 인터페이스는 타입을 정의하는 것
 public interface Person extends Comparable<Person> {
